@@ -8,7 +8,7 @@ DrawerJS is a very simple library for managing `localStorage`, with `find`, `cre
 
 ## Building
 
-Install [Grunt](gruntjs.com) first. After pulling the repository, `cd` to the root and run:
+Install [Grunt](http://gruntjs.com) first. After pulling the repository, `cd` to the root and run:
 
 `npm install`
 
