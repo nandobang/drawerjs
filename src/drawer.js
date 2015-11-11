@@ -5,6 +5,8 @@
  * Drawer
  *
  * TODO: no function should modify the original item.
+ * TODO: add mass create/update/destroy/find functions.
+ * TODO: returned items should bring their id, but discard it while saving.
  */
 
 Drawer = {
@@ -135,6 +137,7 @@ Drawer = {
       return;
     }
 
+    // FIXME: first item created in an empty database will have a `undefined` id.
     var id = parseInt(Object.keys(this.cache[collection]).reverse()[0]) + 1;
 
     item.createdAt = Date.now();

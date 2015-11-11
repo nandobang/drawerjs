@@ -2,6 +2,8 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+
     todo: {
       dist: {
         src: 'src/*.js'
@@ -17,7 +19,7 @@ module.exports = function (grunt) {
     uglify: {
       dist: {
         files: {
-          'dist/drawer.js': 'src/drawer.js'
+          'dist/drawer-<%= pkg.version %>.min.js': 'src/drawer.js'
         }
       }
     }
